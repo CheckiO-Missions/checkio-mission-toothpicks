@@ -1,0 +1,27 @@
+<!-- Describe task in general -->
+<p style="text-align: justify">
+    This task is adapted from following video with Neil Sloane (founder of the <a target="_blank" href="https://oeis.org">On-Line Encyclopedia of Integer Sequences</a>). There are a few interesting sequences are shown in the video (so I recommend you to watch it all), but this particular mission is dedicated to the very first one - <b>toothpicks sequence</b>.
+</p>
+<p style="text-align: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_UtCli1SgjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+<p style="text-align: justify">
+    So, you have an infinite number of toothpicks of equal length and put them down on the table according to the rule. On the first step you just put one toothpick. It has two free ends, on which on the second step you respectively put two toothpicks perpendicularly. Now you have four free ends and put the next four toothpicks on the step three. If two toothpicks ends touch each other, the are not free, so after step three you again have four free end and so on.
+</p>
+<p>
+    The <b>playground</b> of this and other patterns may be seen on the <a target="_blank" href="https://oeis.org/A139250/a139250.anim.html">page</a>. It will be easier to solve the task and it's just a beautiful hypnotic view!)
+</p>
+<p>
+    So, your function must return the number of toothpicks, placed on the table, after <b class="code">step</b> steps.
+</p>
+<!-- Explain input and output values -->
+<p>
+    <strong>Input:</strong> Number of steps as {% if is_js %}Number{% else %}integer{% endif %}.
+</p>
+<p>
+    <strong>Output:</strong> Number of toothpicks as {% if is_js %}Number{% else %}integer{% endif %}.
+</p>
+<p>
+    <strong>Examples:</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
